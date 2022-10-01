@@ -59,7 +59,7 @@ class Matchlist extends StatelessWidget{
                     child:Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
                           Column(
@@ -83,7 +83,7 @@ class Matchlist extends StatelessWidget{
                     child:Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.end,
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
                           Column(
@@ -103,27 +103,26 @@ class Matchlist extends StatelessWidget{
                     ),
                   ),
                   Expanded(
-                    flex:2,
+                    flex:1,
                     child:Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        // mainAxisSize: MainAxisSize.max,
                         children: <Widget>[
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            // mainAxisSize: MainAxisSize.max,
-                            children: <Widget>[
-                              Text(
-                                DateFormat.yMMMEd().format(
-                                    DateFormat('dd-MM-yyyy h:mm:ssa', 'id_ID').parseLoose(matchteam.schedule)
-                                )
-                                ,style: const TextStyle(
-                                  fontSize: 10.0
-                                ),
-                              ),
-                              Icon(Icons.favorite_border, color: Colors.red),
-                            ],
+                          SizedBox(
+                            height: 40,
                           ),
+                          Text(
+                            DateFormat.yMMMEd().format(
+                                DateFormat('dd-MM-yyyy h:mm:ssa', 'id_ID').parseLoose(matchteam.schedule)
+                            )
+                            ,style: const TextStyle(
+                              fontSize: 10.0
+                            ),
+                          ),
+                          Icon(Icons.favorite_border, color: Colors.red),
                         ],
                       ),
                     ),
