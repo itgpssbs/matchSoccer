@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:matchsoccer/DaftarPertandingan.dart';
+import 'package:matchsoccer/match_detail.dart';
+import 'package:matchsoccer/model/match_team.dart';
+import 'match_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const DaftarPertandingan(title: 'Daftar pertandingan Liverpool'),
+      home: const Matchlist(),
     );
   }
 }
