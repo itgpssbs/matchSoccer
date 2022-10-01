@@ -32,29 +32,21 @@ class Matchlist extends StatelessWidget{
                 children: [
                   Expanded(
                     flex:1,
-                    // child:Image.asset('images/1.jpg'),
-                    // child:Image.asset(matchteam.logo1),
                     child:Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
-                          // Text(matchteam.name,style: const TextStyle(fontSize: 16.0),),
-                          // const SizedBox(height: 10,),
-                          // Text(matchteam.broadcaster),
                           Column(
                             children: <Widget>[
-                              // Icon(Icons.calendar_today),
                               SizedBox(height: 8.0),
                               Image.asset(matchteam.logo1),
                             ],
                           ),
                           Column(
                             children: <Widget>[
-                              // Icon(Icons.timeline),
                               SizedBox(height: 8.0),
-                              // Text(matchteam.schedule),
                               Image.asset(matchteam.logo2),
                             ],
                           ),
@@ -64,30 +56,21 @@ class Matchlist extends StatelessWidget{
                   ),
                   Expanded(
                     flex:2,
-                    // child:Image.asset('images/1.jpg'),
-                    // child:Image.asset(matchteam.logo1),
                     child:Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
-                          // Text(matchteam.name,style: const TextStyle(fontSize: 16.0),),
-                          // const SizedBox(height: 10,),
-                          // Text(matchteam.broadcaster),
-
                           Column(
                             children: <Widget>[
-                              // Icon(Icons.calendar_today),
                               SizedBox(height: 27.0),
                               Text(matchteam.team1),
                             ],
                           ),
                           Column(
                             children: <Widget>[
-                              // Icon(Icons.timeline),
                               SizedBox(height: 27.0),
-                              // Text(matchteam.schedule),
                               Text(matchteam.team2),
                             ],
                           ),
@@ -97,30 +80,21 @@ class Matchlist extends StatelessWidget{
                   ),
                   Expanded(
                     flex:1,
-                    // child:Image.asset('images/1.jpg'),
-                    // child:Image.asset(matchteam.logo1),
                     child:Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
-                          // Text(matchteam.name,style: const TextStyle(fontSize: 16.0),),
-                          // const SizedBox(height: 10,),
-                          // Text(matchteam.broadcaster),
-
                           Column(
                             children: <Widget>[
-                              // Icon(Icons.calendar_today),
                               SizedBox(height: 27.0),
                               Text(matchteam.score1.toString()),
                             ],
                           ),
                           Column(
                             children: <Widget>[
-                              // Icon(Icons.timeline),
                               SizedBox(height: 27.0),
-                              // Text(matchteam.schedule),
                               Text(matchteam.score2.toString()),
                             ],
                           ),
@@ -130,13 +104,10 @@ class Matchlist extends StatelessWidget{
                   ),
                   Expanded(
                     flex:2,
-                    // child:Image.asset('images/1.jpg'),
-                    // child:Image.asset(matchteam.logo1),
                     child:Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        // crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -150,17 +121,7 @@ class Matchlist extends StatelessWidget{
                                   fontSize: 10.0
                                 ),
                               ),
-                              // const SizedBox(height: 10,),
-                              // Text(matchteam.broadcaster),
-                              // Column(
-                              //   mainAxisAlignment: MainAxisAlignment.center,
-                              //   crossAxisAlignment: CrossAxisAlignment.center,
-                              //   children: <Widget>[
                               Icon(Icons.favorite_border, color: Colors.red),
-                                  // SizedBox(height: 54.0),
-                                  // Text(matchteam.team1),
-                                // ],
-                              // ),
                             ],
                           ),
                         ],

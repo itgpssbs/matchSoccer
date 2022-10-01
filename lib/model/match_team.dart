@@ -5,7 +5,6 @@ class Matchteam {
   int id;
   String schedule;
   List<String> lineups;
-  List<String> imageUrls;
 
   String team1;
   String team2;
@@ -19,7 +18,6 @@ class Matchteam {
     required this.id,
     required this.schedule,
     required this.lineups,
-    required this.imageUrls,
     required this.team1,
     required this.team2,
     required this.score1,
@@ -37,11 +35,6 @@ var matchteamList = [
       'images/lineups.png',
       'images/subs.png'
     ],
-    imageUrls: [
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHlksdJWoZVLzpINNNZ8K35qjBnR5I5kKEg&usqp=CAU',
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHlksdJWoZVLzpINNNZ8K35qjBnR5I5kKEg&usqp=CAU',
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHlksdJWoZVLzpINNNZ8K35qjBnR5I5kKEg&usqp=CAU'
-    ],
     team1: 'Liverpool',
     team2: 'Arsenal',
     score1: 1,
@@ -57,9 +50,6 @@ var matchteamList = [
       'images/lineups.png',
       'images/subs.png'
     ],
-    imageUrls: [
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHlksdJWoZVLzpINNNZ8K35qjBnR5I5kKEg&usqp=CAU'
-    ],
     team1: 'Manchester City',
     team2: 'Liverpool',
     score1: 1,
@@ -74,9 +64,6 @@ var matchteamList = [
     lineups: [
       'images/lineups.png',
       'images/subs.png'
-    ],
-    imageUrls: [
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHlksdJWoZVLzpINNNZ8K35qjBnR5I5kKEg&usqp=CAU'
     ],
     team1: 'Liverpool',
     team2: 'Westham',
