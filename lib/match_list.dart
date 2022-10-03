@@ -5,6 +5,7 @@ import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
 class Matchlist extends StatelessWidget{
+  static const routeName = '/match_list';
   const Matchlist({Key ? key}):super(key:key);
   @override
   Widget build(BuildContext context) {
@@ -122,7 +123,8 @@ class Matchlist extends StatelessWidget{
                               fontSize: 10.0
                             ),
                           ),
-                          Icon(Icons.favorite_border, color: Colors.red),
+                          // Icon(Icons.favorite_border, color: Colors.red),
+                          const FavoriteButton(),
                         ],
                       ),
                     ),
@@ -134,6 +136,34 @@ class Matchlist extends StatelessWidget{
         },
         itemCount: matchteamList.length,
       ),
+    );
+  }
+}
+
+class FavoriteButton extends StatefulWidget{
+  // const FavoriteButton({Key :key}):super(key:key);
+  const FavoriteButton({Key? key}): super(key:key);
+
+  @override
+  // FavoriteButtonState createState()=> _FavoriteButtonState();
+  _FavoriteButtonState createState()=> _FavoriteButtonState();
+}
+
+class _FavoriteButtonState extends State<FavoriteButton>{
+  bool isFave=false;
+  @override
+  Widget build (BuildContext context){
+    //TODO : implement build
+    return IconButton(
+      icon: Icon(
+          isFave ? Icons.favorite:Icons.favorite_border,
+          color: Colors.red
+      ),
+      onPressed: (){
+        setState((){
+          isFave = !isFave;
+        });
+      },
     );
   }
 }

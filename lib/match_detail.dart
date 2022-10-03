@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
 class Matchdetail extends StatelessWidget {
+  static const routeName = '/match_detail';
   final Matchteam matchteam;
   const Matchdetail({Key? key, required this.matchteam}): super(key:key);
 
