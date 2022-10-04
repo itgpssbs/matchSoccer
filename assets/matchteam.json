@@ -1,0 +1,47 @@
+[
+  {
+    "venue": "Stadion Anfield",
+    "id": 1,
+    "schedule": "01-10-2022 2:00:00AM",
+    "lineups": [
+      "images/lineups.png",
+      "images/subs.png"
+    ],
+    "team1": "Liverpool",
+    "team2": "Arsenal",
+    "score1": 1,
+    "score2": 2,
+    "logo1": "images/liv.png",
+    "logo2": "images/arsenal.png"
+  },
+  {
+    "venue": "Stadion Emirates",
+    "id": 2,
+    "schedule": "01-10-2022 2:00:00AM",
+    "lineups": [
+      "images/lineups.png",
+      "images/subs.png"
+    ],
+    "team1": "Manchester City",
+    "team2": "Liverpool",
+    "score1": 1,
+    "score2": 2,
+    "logo1": "images/mancity.png",
+    "logo2": "images/liv.png"
+  },
+  {
+    "venue": "Stadion Olimpiade London",
+    "id": 3,
+    "schedule": "01-10-2022 2:00:00AM",
+    "lineups": [
+      "images/lineups.png",
+      "images/subs.png"
+    ],
+    "team1": "Liverpool",
+    "team2": "Westham",
+    "score1": 1,
+    "score2": 2,
+    "logo1": "images/liv.png",
+    "logo2": "images/westham.png"
+  }
+]

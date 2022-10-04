@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+// import 'dart:convert';
+// import 'package:flutter/material.dart';
 
 class Matchteam {
   String venue;
@@ -25,7 +26,29 @@ class Matchteam {
     required this.logo1,
     required this.logo2,
   });
+
+  // factory Matchteam.fromJson(Map<String,dynamic> matchteam)=>Matchteam(
+  //     venue:matchteam['venue'],
+  //     id:matchteam['id'] as int,
+  //     schedule:matchteam['schedule'],
+  //     lineups:matchteam['lineups'],
+  //     team1:matchteam['team1'],
+  //     team2:matchteam['team2'],
+  //     score1:matchteam['score1'] as int,
+  //     score2:matchteam['score2'] as int,
+  //     logo1:matchteam['logo1'],
+  //     logo2:matchteam['logo2']
+  // );
 }
+//
+// List<Matchteam> parseMatchteams(dynamic? json){
+//   if (json==null){
+//     return [];
+//   }
+//   final List parsed=jsonDecode(json);
+//   return parsed.map((json)=>Matchteam.fromJson(json)).toList();
+// }
+
 var matchteamList = [
   Matchteam(
     venue: 'Stadion Anfield',

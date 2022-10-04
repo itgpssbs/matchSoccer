@@ -69,7 +69,7 @@ class Matchdetail extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height:400,
+                height:375,
                 child:ListView(
                   scrollDirection: Axis.vertical,
                   children: matchteam.lineups.map((item){
