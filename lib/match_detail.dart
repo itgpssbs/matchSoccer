@@ -98,7 +98,7 @@ class Matchdetail extends StatelessWidget {
                           style: const TextStyle(
                               fontSize: 24.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: 'LEMONMILK-Regular'
+                              fontFamily: 'Raleway'
                           ),
                         ),
                       ],
