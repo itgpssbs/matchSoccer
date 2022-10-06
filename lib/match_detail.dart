@@ -34,13 +34,19 @@ class Matchdetail extends StatelessWidget {
                     ),
                     Column(
                       children: <Widget>[
-                        Text(matchteam.team1),
+                        Text(
+                          matchteam.team1,
+                          style: Theme.of(context).textTheme.overline,
+                        ),
                       ],
                     ),
                     Column(
                       children: <Widget>[
                         SizedBox(height: 8.0),
-                        Text(matchteam.score1.toString()),
+                        Text(
+                          matchteam.score1.toString(),
+                          style: Theme.of(context).textTheme.overline,
+                        ),
                       ],
                     ),
                     Column(
@@ -52,12 +58,18 @@ class Matchdetail extends StatelessWidget {
                     Column(
                       children: <Widget>[
                         SizedBox(height: 8.0),
-                        Text(matchteam.score2.toString()),
+                        Text(
+                          matchteam.score2.toString(),
+                          style: Theme.of(context).textTheme.overline,
+                        ),
                       ],
                     ),
                     Column(
                       children: <Widget>[
-                        Text(matchteam.team2),
+                        Text(
+                          matchteam.team2,
+                          style: Theme.of(context).textTheme.overline,
+                        ),
                       ],
                     ),
                     Column(
@@ -98,7 +110,8 @@ class Matchdetail extends StatelessWidget {
                           style: const TextStyle(
                               fontSize: 24.0,
                               fontWeight: FontWeight.bold,
-                              fontFamily: 'Raleway'
+                              fontFamily: 'Raleway',
+                              color: Colors.white
                           ),
                         ),
                       ],
@@ -113,7 +126,10 @@ class Matchdetail extends StatelessWidget {
                   children: <Widget>[
                     Column(
                       children: <Widget>[
-                        Text(matchteam.venue),
+                        Text(
+                            matchteam.venue,
+                            style: Theme.of(context).textTheme.headline6,
+                        ),
                       ],
                     ),
                   ],

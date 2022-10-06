@@ -196,6 +196,9 @@ class _FavoriteButtonState extends State<FavoriteButton> {
           isFave = !isFave;
         });
       },
+      style: ElevatedButton.styleFrom(
+        elevation: 8.0,
+      ),
     );
   }
 }

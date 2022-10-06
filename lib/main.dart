@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Match Soccer',
       theme: ThemeData(
         colorScheme: Theme.of(context).colorScheme.copyWith(
-          primary: primaryColor700,
+          primary: primaryColor800,
           onPrimary: Colors.white,
           secondary: secondaryColor,
           error: errorColor,
@@ -44,6 +44,22 @@ class MyApp extends StatelessWidget {
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(16)),
             )
+          ),
+        ),
+        scaffoldBackgroundColor: primaryColor900,
+        textSelectionTheme: const TextSelectionThemeData(
+          selectionColor: primaryColor700,
+        ),
+        inputDecorationTheme: const InputDecorationTheme(
+          // border: CutCornersBorder(),
+          // focusedBorder: CutCornersBorder(
+          //   borderSide: BorderSide(
+          //     width: 2.0,
+          //     color: kShrinePurple,
+          //   ),
+          // ),
+          floatingLabelStyle: TextStyle(
+            color: primaryColor700,
           ),
         ),
       ),
